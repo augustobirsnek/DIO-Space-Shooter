@@ -124,10 +124,8 @@ function checkLaserCollision(laser, alien) {
     let alienBottom = alienTop - 40;
     if(laserLeft != 340 && (laserLeft + 40) >= alienLeft) {
         if(laserTop <= alienTop && laserTop >= alienBottom) {
-            console.log('aqui');
             return true;
         } else {
-            console.log("a1")
             return false;
         }
     } else {
